@@ -9,7 +9,7 @@ charging stations ("charge points") and a single management software ("central s
 ## Installation
 
 ```
-npm i ocpp-ts
+ocpp-node-ts-npm-test
 ```
 
 ## Usage

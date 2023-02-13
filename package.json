@@ -1,6 +1,6 @@
 {
-  "name": "ocpp-node-ts",
-  "version": "0.0.1",
+  "name": "ocpp-node-ts-npm-test",
+  "version": "0.0.3",
   "description": "OCPP 2.0.1: Open Charge Point Protocol",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -19,10 +19,10 @@
   ],
   "author": "Ihor Vorontsov",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sepych/ocpp-ts/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ulweyn/npm-package-test.git"
   },
-  "homepage": "https://github.com/sepych/ocpp-ts",
   "dependencies": {
     "@bcherny/json-schema-ref-parser": "^9.0.9",
     "ajv": "^6.12.6",
