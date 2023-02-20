@@ -1,5 +1,5 @@
 {
-  "name": "ocpp-node-ts-npm-test2",
+  "name": "ocpp-node-ts-npm-test3",
   "version": "0.18.0",
   "description": "OCPP 2.0.1: Open Charge Point Protocol",
   "main": "dist/src/index.js",
