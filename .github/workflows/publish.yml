@@ -5,18 +5,7 @@ on:
     types: [ created ]
 
 jobs:
-
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
   publish:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -26,6 +15,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org
+      - name: Build
+        run: npm run build
       - name: publish
         run: npm publish --access public
         env:

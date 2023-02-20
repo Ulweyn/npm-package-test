@@ -1,4 +1,5 @@
-# OCPP
+![Maintaner](https://img.shields.io/badge/maintainer-extrawest.com-blue)
+# Extrawest OCPP 2.0.1 package
 
 Typescript package implementing the JSON version of the Open Charge Point Protocol (OCPP). Currently OCPP 2.0.1 is
 supported.
@@ -9,7 +10,7 @@ charging stations ("charge points") and a single management software ("central s
 ## Installation
 
 ```
-ocpp-node-ts-npm-test
+npm i @extrawest/node-ts-ocpp
 ```
 
 ## Usage
@@ -60,8 +61,8 @@ chargingPointSimple.on('close', () => {
 chargingPointSimple.on('connect', async () => {
     const boot: BootNotificationRequest = {
         chargingStation: {
-            model: "eParking",
-            vendorName: "NECU-T2"
+            model: "someModel",
+            vendorName: "someVendor"
         },
         reason: "Unknown"
     };
@@ -105,7 +106,7 @@ centralSystemSimple.listen(9220, {
 If the central system requires authorization, an authorization header can be placed as the second parameter.
 
 ```ts
-chargingPointSimple.connect('wss://eparking.fi/ocpp/', {
+chargingPointSimple.connect('wss://yourcs.com/ocpp/', {
     Authorization: getBasicAuth(),
 });
 ```
